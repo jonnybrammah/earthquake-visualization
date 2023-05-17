@@ -3,7 +3,8 @@ let mapZoomLevel = 4;
 
 // Create a function that will create the map and will add earthquake locations to it
 
-function createMap(earthquakeLocations) {
+///// ATTEMPTING TO INCLUDE PLATELOCATIONS AS AN OVERLAY MAP /////
+function createMap(earthquakeLocations, plateLocations) {
 
     // Create tile layers that will be the initial background of our map:
     let streetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,7 +22,9 @@ function createMap(earthquakeLocations) {
 
     // Create an overlapMaps object that will hold the earthquake data from the geoJson
     let overlayMaps = {
-        "Earthquakes": earthquakeLocations
+        "Earthquakes": earthquakeLocations,
+        //////Wondering if this is how to overlay the plate info:
+        "Plate Boundaries": plateLocations
     };
 
     //Put toegther the whole map
@@ -116,8 +119,27 @@ function createCircles(response) {
 }
 
 
+//// Attempting a function to add GEOJson data for plates. /////
+function PlateBoundaries(response) {
+
+    let boundaryInfo = L.geoJson(response);
+
+    console.log(boundaryInfo)
+
+    createMap(L.layerGroup(boundaryInfo));
+
+}
+
+
+
 // Define the URL to get all Earthquakes from the previous week
-url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 //Perform the API call to the usgs website and then do the createCircles function on the response
 d3.json(url).then(createCircles);
+
+// Define the URL to get all Plate Boundary information
+platesUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
+
+//Perform the API call to get the plate boundary geojson
+d3.json(platesUrl).then(PlateBoundaries);
