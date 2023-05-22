@@ -10,8 +10,8 @@ The goal of this project was to visualize recent earthquakes on a Leaflet map, a
 
 ## Table of Contents
 
-1. [What the Visualization Shows]
-2. [How the Map was Created]
+1. [What the Visualization Shows](https://github.com/jonnybrammah/earthquake-visualization/blob/main/README.md#what-the-visualization-shows)
+2. [How the Map was Created](https://github.com/jonnybrammah/earthquake-visualization/blob/main/README.md#setting-up-the-map)
 
 -----
 ### What the Visualization Shows
@@ -22,7 +22,7 @@ The final product of the Earthquake Visualization Project is shown below:
 
 -----
 
-## Setting up the Map
+### Setting up the Map
 
 ### Base Maps
 
