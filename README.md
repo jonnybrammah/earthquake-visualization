@@ -1,7 +1,8 @@
 # earthquake-visualization
------
+![Earthquake Visualizations](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/earthquakes_overview.png)
 
 -----
+
 ## Project Description
 
 The goal of this project was to visualize recent earthquakes on a Leaflet map, and represent key information about them. A user should be able to open the map and see where recent Earthquakes have been, get a sense of their magnitude and depth, and click for more information. An additional layer was added to show the locations of fault lines. To achieve this, a JavaScript file was written that pulled data of the previous week of earthquakes from the [United States Geological Survey](https://www.usgs.gov/) API. The data was then parsed to show the location, magnitude and other relevant information and Leaflet was used to plot this on a map.
@@ -28,9 +29,7 @@ Similarly, you can see that most of these earthquakes are colored green or yello
 
 One interesting point to note though is you can see a fairly sizable number of earthquakes in Oklahoma, Idaho and Texas (and surrounding areas of these states), despite them being relatively distant from any fault lines. The USGS actually has [a webpage relating to this phenomenon in Oklahoma](https://www.usgs.gov/faqs/oklahoma-has-had-surge-earthquakes-2009-are-they-due-fracking) which explains that "majority of earthquakes in Oklahoma are caused by the industrial practice​ known as 'wastewater disposal'".
 
-
-
-
+![Oklahoma and Texas](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/Oklahoma_Texas.png)
 
 -----
 
