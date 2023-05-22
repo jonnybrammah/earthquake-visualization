@@ -131,9 +131,15 @@ d3.json(url).then(function(response) {
             position: "bottomright"
         });
 
+        // Add all the important pieces to the legend
         legend.onAdd = function () {
+            // Create a div element in the html file
             var div = L.DomUtil.create("div", "info legend");
 
+            // Include the background color in the newly defined "div"
+            div.style.backgroundColor = "white";           
+
+            // These are the definitions of depth and colors
             var grades = [-10, 10, 30, 50, 70, 90];
             var colors = [
             "#98ee00",
@@ -145,15 +151,31 @@ d3.json(url).then(function(response) {
 
             // Loop through our intervals and generate a label with a colored square for each interval.
             for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += "<i style='background: "
-                + colors[i]
-                + "'></i> "
-                + grades[i]
-                + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
+
+                //Create the square with a set width and height to match the text
+                var square = L.DomUtil.create("i", "", div);
+                square.style.width = "18px";
+                square.style.height = "18px";
+                // Put it to the left of the text
+                square.style.float = "left";
+
+                //Set the opacity to 70%
+                square.style.opacity = "0.7";
+
+                //Add the color to the square
+                square.style.backgroundColor = colors[i];
+
+                // Add the label information
+                div.innerHTML += "<i style='background: "
+                    + colors[i]
+                    + "'></i> "
+                    + grades[i]
+                    + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
             }
             return div;
         };
 
+        // Add the legend to the map
         legend.addTo(myMap);
 
 
