@@ -26,7 +26,9 @@ It's clear from this map that the earthquakes broadly follow the position of the
 
 Similarly, you can see that most of these earthquakes are colored green or yellow, indicating they are relatively shallow.
 
-One interesting point to note though is you can see a fairly sizable number of earthquakes in Oklahoma, Idaho and Texas (and surrounding areas of these states), despite them being relatively distant from any fault lines. The USGS actually has [a webpage relating to this phenomenon in Oklahoma](https://www.usgs.gov/faqs/oklahoma-has-had-surge-earthquakes-2009-are-they-due-fracking) which explains that "majority of earthquakes in Oklahoma are caused by the industrial practice​ known as 'wastewater disposal'". 
+One interesting point to note though is you can see a fairly sizable number of earthquakes in Oklahoma, Idaho and Texas (and surrounding areas of these states), despite them being relatively distant from any fault lines. The USGS actually has [a webpage relating to this phenomenon in Oklahoma](https://www.usgs.gov/faqs/oklahoma-has-had-surge-earthquakes-2009-are-they-due-fracking) which explains that "majority of earthquakes in Oklahoma are caused by the industrial practice​ known as 'wastewater disposal'".
+
+
 
 
 
