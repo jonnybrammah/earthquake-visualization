@@ -18,6 +18,16 @@ The goal of this project was to visualize recent earthquakes on a Leaflet map, a
 
 The final product of the Earthquake Visualization Project is shown below:
 
+![Overall Map](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/overall_map.png)
+
+Each earthquake over the previous week is shown by a circle. The size of the circle represents the magnitude of the earthquake, and the color represents it's depth below the surface in miles, with a legend in the corner. Fault lines have been added as orange lines.
+
+It's clear from this map that the earthquakes broadly follow the position of the fault lines, as expected, with many in California and up the West Coast and a large number following the southern coast of Alaska. You can also see that broadly these earthquakes are relatively low magnitude, with even the larger circles on this current map less than Magnitude 4.
+
+Similarly, you can see that most of these earthquakes are colored green or yellow, indicating they are relatively shallow.
+
+One interesting point to note though is you can see a fairly sizable number of earthquakes in Oklahoma, Idaho and Texas (and surrounding areas of these states), despite them being relatively distant from any fault lines. The USGS actually has [a webpage relating to this phenomenon in Oklahoma](https://www.usgs.gov/faqs/oklahoma-has-had-surge-earthquakes-2009-are-they-due-fracking) which explains that "majority of earthquakes in Oklahoma are caused by the industrial practice​ known as 'wastewater disposal'". 
+
 
 
 -----
