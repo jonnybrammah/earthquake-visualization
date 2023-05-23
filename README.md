@@ -13,6 +13,7 @@ The goal of this project was to visualize recent earthquakes on a Leaflet map, a
 
 1. [What the Visualization Shows](https://github.com/jonnybrammah/earthquake-visualization/blob/main/README.md#what-the-visualization-shows)
 2. [How the Map was Created](https://github.com/jonnybrammah/earthquake-visualization/blob/main/README.md#setting-up-the-map)
+3. [Possible Next Steps](https://github.com/jonnybrammah/earthquake-visualization/blob/main/README.md#possible-next-steps)
 
 -----
 ### What the Visualization Shows
@@ -61,6 +62,7 @@ Additional information was added so that when a user clicked on a specific earth
 - Its depth.
 
 This can all be seen below:
+
 ![click_info](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/click_info.png)
 
 ##### Fault Lines
@@ -77,7 +79,14 @@ The last thing to be added to the map was a legend so that users could be aware 
 
 Since this code went beyond the scope of our learning in class, it involved some additional research and working with TAs.
 
+-----
+
+### Possible Next Steps
+
+If this project were to be extended, another feature that would be useful might be to have the opacity of an earthquake change so that it becomes more transparent the less recently it was recorded. 
 
 -----
 
 ### Acknowledgements 
+
+The starting point for the code to add the legend can be found here: https://gis.stackexchange.com/questions/133630/adding-leaflet-legend
