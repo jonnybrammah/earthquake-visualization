@@ -54,6 +54,7 @@ These were stored as the variable baseMaps and a control was added to be able to
 
 Data from the USGS was extracted and stored as a series of circles, where the size of the circle represented the magnitude of the earthquake, and its color represented the depth of the quake. Latitude and Longitude data was then used to add this as an overlay map to the Leaflet map:
 
+![Earthquake Overlay](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/overlays_earthquakes.png)
 
 Additional information was added so that when a user clicked on a specific earthquake, this information would appear. The information selected to be shown was:
 - The "Place" of the Earthquake
