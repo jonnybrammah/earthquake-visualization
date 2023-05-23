@@ -1,4 +1,4 @@
-# earthquake-visualization
+# Earthquake Visualization
 ![Earthquake Visualizations](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/earthquakes_overview.png)
 
 -----
@@ -35,23 +35,49 @@ One interesting point to note though is you can see a fairly sizable number of e
 
 ### Setting up the Map
 
-### Base Maps
+#### Base Maps
 
 Two standard Leaflet tile layers were used as background maps for this project:
 
 1. Street Map
-
+![Street Map](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/earthquakes_overview.png)
 
 2. Topographic Map
-
+![Topo Map](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/base_layer_topo.png)
 
 These were stored as the variable baseMaps and a control was added to be able to switch between these.
 
-### 
+#### Overlay Maps
+
+##### Earthquake Markers
+
+Data from the USGS was extracted and stored as a series of circles, where the size of the circle represented the magnitude of the earthquake, and its color represented the depth of the quake. Latitude and Longitude data was then used to add this as an overlay map to the Leaflet map:
+
+
+Additional information was added so that when a user clicked on a specific earthquake, this information would appear. The information selected to be shown was:
+- The "Place" of the Earthquake
+- Its magnitude
+- The date and time that the Earthquake was recorded (This had to be converted from a UNIX datetime stamp first)
+- Its depth.
+
+This can all be seen below:
+![click_info](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/click_info.png)
+
+##### Fault Lines
+
+Data from a [GeoJson file](https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json) was then added as another overlay map to show the locations of fault lines. This was a relatively simple addition due to the ease of adding geoJson layers.
+
+![Fault Lines](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/overlays_faultlines.png) 
+
+#### Finishing Touches
+
+The last thing to be added to the map was a legend so that users could be aware of what each color meant. Including this meant altering the html text inside the javascript file to add the legend, with a square next to each depth range, colored accordingly:
+
+![Legend](https://raw.githubusercontent.com/jonnybrammah/earthquake-visualization/main/Images/legend.png)
+
+Since this code went beyond the scope of our learning in class, it involved some additional research and working with TAs.
 
 
 -----
-
-
 
 ### Acknowledgements 
